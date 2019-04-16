@@ -39,7 +39,7 @@ const BigInputBox = styled.textarea`
 class ContactForm extends Component {
     render() {
         return (
-            <TealGradientBox p={[5, 6]}>
+            <TealGradientBox px={[5, 6]} py={5}>
                 <Text width={1} fontFamily="Bariol" fontSize={5} color="white">
                     Contact Us
                 </Text>
