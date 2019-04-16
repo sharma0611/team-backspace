@@ -1,13 +1,13 @@
 import React, { Component } from 'react'
 import './App.css'
-import Home from './Pages/Home'
 import Theme from './Theme'
+import Router from './Router'
 
 class App extends Component {
     render() {
         return (
             <Theme>
-                <Home />
+                <Router />
             </Theme>
         )
     }

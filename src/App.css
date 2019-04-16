@@ -24,6 +24,11 @@
     src: local('Bariol'), url(./Fonts/Bariol.otf) format('otf');
 }
 
+a:any-link {
+    text-decoration: none;
+    color: inherit;
+}
+
 .App-link {
     color: #61dafb;
 }
