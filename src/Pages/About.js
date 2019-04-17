@@ -7,6 +7,7 @@ import shivam from '../Images/ShivamBitmoji.png'
 import shady from '../Images/ShadyBitmoji.png'
 import max from '../Images/MaxBitmoji.png'
 import maxAlt from '../Images/MaxBitmoji2.png'
+import matt from '../Images/MattBitmoji.png'
 
 class About extends Component {
     render() {
@@ -24,21 +25,6 @@ class About extends Component {
                     in Waterloo.
                 </Text>
                 <Flex justifyContent="space-around" px={[3, 3, 6]} flexWrap="wrap">
-                    <Flex
-                        flexDirection="column"
-                        alignItems="center"
-                        onClick={e =>
-                            window.open(
-                                'https://www.linkedin.com/in/shivam-sharma-245187107/',
-                                '_blank'
-                            )
-                        }
-                    >
-                        <Image src={shivam} height={350} alignSelf="center" />
-                        <Text pt={3} textAlign="center" fontFamily="Bariol" fontSize={3}>
-                            Shivam
-                        </Text>
-                    </Flex>
                     <Flex
                         onClick={e =>
                             window.open('https://www.linkedin.com/in/max-theodore-jakel/', '_blank')
@@ -65,9 +51,24 @@ class About extends Component {
                             window.open('https://www.linkedin.com/in/matthewvukojevic/', '_blank')
                         }
                     >
-                        <Image src={shady} height={350} alignSelf="center" />
+                        <Image src={matt} height={350} alignSelf="center" />
                         <Text pt={3} textAlign="center" fontFamily="Bariol" fontSize={3}>
                             Matt
+                        </Text>
+                    </Flex>
+                    <Flex
+                        flexDirection="column"
+                        alignItems="center"
+                        onClick={e =>
+                            window.open(
+                                'https://www.linkedin.com/in/shivam-sharma-245187107/',
+                                '_blank'
+                            )
+                        }
+                    >
+                        <Image src={shivam} height={350} alignSelf="center" />
+                        <Text pt={3} textAlign="center" fontFamily="Bariol" fontSize={3}>
+                            Shivam
                         </Text>
                     </Flex>
                     <Flex
@@ -82,7 +83,7 @@ class About extends Component {
                             Shady
                         </Text>
                     </Flex>
-                    <Flex
+                    {/* <Flex
                         flexDirection="column"
                         alignItems="center"
                         onClick={e => window.open('https://www.linkedin.com/in/fukouda/', '_blank')}
@@ -91,7 +92,7 @@ class About extends Component {
                         <Text pt={3} textAlign="center" fontFamily="Bariol" fontSize={3}>
                             Nasr
                         </Text>
-                    </Flex>
+                    </Flex> */}
                 </Flex>
                 <Text
                     width={1}
