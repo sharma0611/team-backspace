@@ -15,7 +15,7 @@ class ClientBox extends Component<Props> {
         const { name, description, link, logo } = this.props
 
         return (
-            <Flex p={5} justifyContent="space-evenly" flexWrap="wrap">
+            <Flex p={[2, 5]} justifyContent="space-evenly" flexWrap="wrap">
                 <Flex width={[1, 1 / 4]} justifyContent="center" py={[5, 1]}>
                     <Image src={logo} width={200} alignSelf="center" />
                 </Flex>

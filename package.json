@@ -14,7 +14,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "build-deploy": "yarn build && aws s3 sync ./build/ s3://teambackspace.com/"
   },
   "eslintConfig": {
     "extends": "react-app"
