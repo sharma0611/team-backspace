@@ -51,6 +51,7 @@ class About extends Component {
                             height={350}
                             alignSelf="center"
                             onMouseOver={e => (e.currentTarget.src = maxAlt)}
+                            onPress={e => (e.currentTarget.src = maxAlt)}
                             onMouseOut={e => (e.currentTarget.src = max)}
                         />
                         <Text pt={3} textAlign="center" fontFamily="Bariol" fontSize={3}>
