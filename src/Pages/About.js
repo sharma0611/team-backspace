@@ -8,6 +8,7 @@ import shady from '../Images/ShadyBitmoji.png'
 import max from '../Images/MaxBitmoji.png'
 import maxAlt from '../Images/MaxBitmoji2.png'
 import matt from '../Images/MattBitmoji.png'
+import nasr from '../Images/NasrBitmoji.png'
 
 class About extends Component {
     render() {
@@ -24,7 +25,7 @@ class About extends Component {
                     We’re a team of software engineers, product designers, and data scientists based
                     in Waterloo.
                 </Text>
-                <Flex justifyContent="space-around" px={[3, 3, 6]} flexWrap="wrap">
+                <Flex justifyContent="space-around" px={[3, 3, 4]} flexWrap="wrap">
                     <Flex
                         onClick={e =>
                             window.open('https://www.linkedin.com/in/max-theodore-jakel/', '_blank')
@@ -59,6 +60,16 @@ class About extends Component {
                     <Flex
                         flexDirection="column"
                         alignItems="center"
+                        onClick={e => window.open('https://www.linkedin.com/in/fukouda/', '_blank')}
+                    >
+                        <Image src={nasr} height={350} alignSelf="center" />
+                        <Text pt={3} textAlign="center" fontFamily="Bariol" fontSize={3}>
+                            Nasr
+                        </Text>
+                    </Flex>
+                    <Flex
+                        flexDirection="column"
+                        alignItems="center"
                         onClick={e =>
                             window.open(
                                 'https://www.linkedin.com/in/shivam-sharma-245187107/',
@@ -83,16 +94,6 @@ class About extends Component {
                             Shady
                         </Text>
                     </Flex>
-                    {/* <Flex
-                        flexDirection="column"
-                        alignItems="center"
-                        onClick={e => window.open('https://www.linkedin.com/in/fukouda/', '_blank')}
-                    >
-                        <Image src={shady} height={350} alignSelf="center" />
-                        <Text pt={3} textAlign="center" fontFamily="Bariol" fontSize={3}>
-                            Nasr
-                        </Text>
-                    </Flex> */}
                 </Flex>
                 <Text
                     width={1}
