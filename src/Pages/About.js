@@ -23,14 +23,29 @@ class About extends Component {
                     We’re a team of software engineers, product designers, and data scientists based
                     in Waterloo.
                 </Text>
-                <Flex justifyContent="space-around" px={[3, 3, 7]} flexWrap="wrap">
-                    <Flex flexDirection="column" alignItems="center">
+                <Flex justifyContent="space-around" px={[3, 3, 6]} flexWrap="wrap">
+                    <Flex
+                        flexDirection="column"
+                        alignItems="center"
+                        onClick={e =>
+                            window.open(
+                                'https://www.linkedin.com/in/shivam-sharma-245187107/',
+                                '_blank'
+                            )
+                        }
+                    >
                         <Image src={shivam} height={350} alignSelf="center" />
                         <Text pt={3} textAlign="center" fontFamily="Bariol" fontSize={3}>
                             Shivam
                         </Text>
                     </Flex>
-                    <Flex flexDirection="column" alignItems="center">
+                    <Flex
+                        onClick={e =>
+                            window.open('https://www.linkedin.com/in/max-theodore-jakel/', '_blank')
+                        }
+                        flexDirection="column"
+                        alignItems="center"
+                    >
                         <Image
                             src={max}
                             height={350}
@@ -42,16 +57,38 @@ class About extends Component {
                             Max
                         </Text>
                     </Flex>
-                    <Flex flexDirection="column" alignItems="center">
+                    <Flex
+                        flexDirection="column"
+                        alignItems="center"
+                        onClick={e =>
+                            window.open('https://www.linkedin.com/in/matthewvukojevic/', '_blank')
+                        }
+                    >
                         <Image src={shady} height={350} alignSelf="center" />
                         <Text pt={3} textAlign="center" fontFamily="Bariol" fontSize={3}>
                             Matt
                         </Text>
                     </Flex>
-                    <Flex flexDirection="column" alignItems="center">
-                        <Image src={shivam} height={350} alignSelf="center" />
+                    <Flex
+                        flexDirection="column"
+                        alignItems="center"
+                        onClick={e =>
+                            window.open('https://www.linkedin.com/in/theshadyibrahim/', '_blank')
+                        }
+                    >
+                        <Image src={shady} height={350} alignSelf="center" />
                         <Text pt={3} textAlign="center" fontFamily="Bariol" fontSize={3}>
                             Shady
+                        </Text>
+                    </Flex>
+                    <Flex
+                        flexDirection="column"
+                        alignItems="center"
+                        onClick={e => window.open('https://www.linkedin.com/in/fukouda/', '_blank')}
+                    >
+                        <Image src={shady} height={350} alignSelf="center" />
+                        <Text pt={3} textAlign="center" fontFamily="Bariol" fontSize={3}>
+                            Nasr
                         </Text>
                     </Flex>
                 </Flex>
