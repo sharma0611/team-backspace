@@ -21,7 +21,10 @@
 
 @font-face {
     font-family: 'Bariol';
-    src: local('Bariol'), url(./Fonts/Bariol.otf) format('otf');
+    src: url('./Fonts/bariol.woff2') format('woff2'), url('./Fonts/bariol.woff') format('woff'),
+        url('./Fonts/Bariol.otf') format('otf');
+    font-weight: normal;
+    font-style: normal;
 }
 
 a:any-link {
