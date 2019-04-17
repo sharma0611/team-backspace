@@ -5,6 +5,8 @@ import styled from 'styled-components'
 
 import shivam from '../Images/ShivamBitmoji.png'
 import shady from '../Images/ShadyBitmoji.png'
+import max from '../Images/MaxBitmoji.png'
+import maxAlt from '../Images/MaxBitmoji2.png'
 
 class About extends Component {
     render() {
@@ -29,6 +31,18 @@ class About extends Component {
                         </Text>
                     </Flex>
                     <Flex flexDirection="column" alignItems="center">
+                        <Image
+                            src={max}
+                            height={350}
+                            alignSelf="center"
+                            onMouseOver={e => (e.currentTarget.src = maxAlt)}
+                            onMouseOut={e => (e.currentTarget.src = max)}
+                        />
+                        <Text pt={3} textAlign="center" fontFamily="Bariol" fontSize={3}>
+                            Max
+                        </Text>
+                    </Flex>
+                    <Flex flexDirection="column" alignItems="center">
                         <Image src={shady} height={350} alignSelf="center" />
                         <Text pt={3} textAlign="center" fontFamily="Bariol" fontSize={3}>
                             Matt
@@ -38,12 +52,6 @@ class About extends Component {
                         <Image src={shivam} height={350} alignSelf="center" />
                         <Text pt={3} textAlign="center" fontFamily="Bariol" fontSize={3}>
                             Shady
-                        </Text>
-                    </Flex>
-                    <Flex flexDirection="column" alignItems="center">
-                        <Image src={shady} height={350} alignSelf="center" />
-                        <Text pt={3} textAlign="center" fontFamily="Bariol" fontSize={3}>
-                            Nasr
                         </Text>
                     </Flex>
                 </Flex>
