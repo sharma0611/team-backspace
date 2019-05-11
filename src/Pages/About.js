@@ -4,8 +4,9 @@ import { Flex, Box, Text, Image } from 'rebass'
 import styled from 'styled-components'
 
 import shivam from '../Images/ShivamBitmoji.png'
-import shady from '../Images/ShadyBitmoji.png'
-import max from '../Images/MaxBitmoji.png'
+// import shady from '../Images/ShadyBitmoji.png'
+// import max from '../Images/MaxBitmoji.png'
+import narayan from '../Images/NarayanBitmoji.png'
 import maxAlt from '../Images/MaxBitmoji2.png'
 import matt from '../Images/MattBitmoji.png'
 import nasr from '../Images/NasrBitmoji.png'
@@ -28,21 +29,22 @@ class About extends Component {
                 <Flex justifyContent="space-around" px={[3, 3, 4]} flexWrap="wrap">
                     <Flex
                         onClick={e =>
-                            window.open('https://www.linkedin.com/in/max-theodore-jakel/', '_blank')
+                            window.open('https://www.linkedin.com/in/narayangup/', '_blank')
                         }
                         flexDirection="column"
                         alignItems="center"
+                        mb={4}
                     >
                         <Image
-                            src={max}
+                            src={narayan}
                             height={350}
                             alignSelf="center"
-                            onMouseOver={e => (e.currentTarget.src = maxAlt)}
-                            onPress={e => (e.currentTarget.src = maxAlt)}
-                            onMouseOut={e => (e.currentTarget.src = max)}
+                            // onMouseOver={e => (e.currentTarget.src = maxAlt)}
+                            // onPress={e => (e.currentTarget.src = maxAlt)}
+                            // onMouseOut={e => (e.currentTarget.src = max)}
                         />
                         <Text pt={3} textAlign="center" fontFamily="Bariol" fontSize={3}>
-                            Max
+                            Narayan
                         </Text>
                     </Flex>
                     <Flex
@@ -51,6 +53,7 @@ class About extends Component {
                         onClick={e =>
                             window.open('https://www.linkedin.com/in/matthewvukojevic/', '_blank')
                         }
+                        mb={4}
                     >
                         <Image src={matt} height={350} alignSelf="center" />
                         <Text pt={3} textAlign="center" fontFamily="Bariol" fontSize={3}>
@@ -61,6 +64,7 @@ class About extends Component {
                         flexDirection="column"
                         alignItems="center"
                         onClick={e => window.open('https://www.linkedin.com/in/fukouda/', '_blank')}
+                        mb={4}
                     >
                         <Image src={nasr} height={350} alignSelf="center" />
                         <Text pt={3} textAlign="center" fontFamily="Bariol" fontSize={3}>
@@ -76,13 +80,14 @@ class About extends Component {
                                 '_blank'
                             )
                         }
+                        mb={4}
                     >
                         <Image src={shivam} height={350} alignSelf="center" />
                         <Text pt={3} textAlign="center" fontFamily="Bariol" fontSize={3}>
                             Shivam
                         </Text>
                     </Flex>
-                    <Flex
+                    {/* <Flex
                         flexDirection="column"
                         alignItems="center"
                         onClick={e =>
@@ -93,7 +98,7 @@ class About extends Component {
                         <Text pt={3} textAlign="center" fontFamily="Bariol" fontSize={3}>
                             Shady
                         </Text>
-                    </Flex>
+                    </Flex> */}
                 </Flex>
                 <Text
                     width={1}
